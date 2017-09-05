@@ -1,3 +1,4 @@
 assets/*.js
 config/*.js
 src/api/products.js
+*.go

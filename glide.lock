@@ -1,5 +1,5 @@
 hash: ecc57bf873ca4ce4295146be54026c50272f5ac2062dfdc6a3f341b9080c47b2
-updated: 2016-12-23T18:31:59.172800934+02:00
+updated: 2017-09-05T12:00:04.0130606+08:00
 imports:
 - name: github.com/astaxie/beego
   version: 90999717dda6193c6f970eec52e289b0a9e74998
@@ -13,44 +13,53 @@ imports:
   - utils
 - name: github.com/jinzhu/gorm
   version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
+  subpackages:
+  - dialects/postgres
 - name: github.com/jinzhu/inflection
-  version: 74387dc39a75e970e7a3ae6a3386b5bd2e5c5cff
+  version: 1c35d901db3da928c72a72d8458480cc9ade058f
 - name: github.com/lib/pq
-  version: 4a82388ebc5138c8289fe9bc602cb0b3e32cd617
+  version: e42267488fe361b9dc034be7a6bffef5b195bceb
+  subpackages:
+  - hstore
+  - oid
 - name: github.com/neelance/graphql-go
-  version: 191422c4ccf1fef693582e7f18bc263e6f2e09d2
+  version: 52080e1f0951c75dd4addba57db27fc4de1d0019
   subpackages:
   - errors
   - internal/common
   - internal/exec
-  - internal/lexer
+  - internal/exec/packer
+  - internal/exec/resolvable
+  - internal/exec/selected
   - internal/query
   - internal/schema
+  - internal/validation
+  - introspection
+  - log
+  - trace
 - name: github.com/opentracing/opentracing-go
-  version: ac5446f53f2c0fc68dc16dc5f426eae1cd288b34
+  version: 8ebe5d4e236eed9fd88e593c288bfb804d630b8c
   subpackages:
   - ext
   - log
-- name: github.com/pkg/errors
-  version: 248dadf4e9068a0b3e79f02ed0a610d935de5302
 - name: golang.org/x/net
-  version: cfae461cedfdcab6e261a26eb77db53695623303
+  version: 66aacef3dd8a676686c7ae3716979581e8b03c47
   subpackages:
   - context
 testImports:
 - name: github.com/gopherjs/gopherjs
-  version: db2cfff3878815d744fb4a4bd07cba0596eaf2a5
+  version: f7c56533adfac99e12ccdccfec04a466d2a778da
   subpackages:
   - js
 - name: github.com/jtolds/gls
-  version: 8ddce2a84170772b95dd5d576c48d517b22cac63
+  version: 77f18212c9c7edc9bd6a33d383a7b545ce62f064
 - name: github.com/smartystreets/assertions
-  version: 26acb9229f421449ac63d014995b282d59261a8b
+  version: 9c0ea8acbc1d8ad689f9e6fe0c1fa5838e0cabc2
   subpackages:
   - internal/go-render/render
   - internal/oglematchers
 - name: github.com/smartystreets/goconvey
-  version: d4c757aa9afd1e2fc1832aaab209b5794eb336e1
+  version: 9e8dc3f972df6c8fcc0375ef492c24d0bb204857
   subpackages:
   - convey
   - convey/gotest

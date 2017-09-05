@@ -23,4 +23,3 @@ var Schema = `
 	  password: String!
 	}
 `
-
